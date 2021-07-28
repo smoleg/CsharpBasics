@@ -19,7 +19,7 @@ namespace Exercises_HW1
             double weight = Convert.ToDouble(Console.ReadLine());
             double index = weight / Math.Pow(height,2);
 
-            Console.WriteLine($"Ваш ИМТ = {index}");
+            Console.WriteLine($"Ваш ИМТ = {index:F2}");
             Console.ReadLine();
         }
     }
