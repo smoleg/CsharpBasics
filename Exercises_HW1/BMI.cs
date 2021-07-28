@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Exercises_HW1
 {
     // Смоляков Егор
-    //Ввести вес и рост человека.Рассчитать и вывести индекс массы тела(ИМТ) по формуле I=m/(h* h); где m — масса тела в килограммах, h — рост в метрах.
+    // Ввести вес и рост человека.Рассчитать и вывести индекс массы тела(ИМТ) по формуле I=m/(h* h); где m — масса тела в килограммах, h — рост в метрах.
 
     class BMI
     {
@@ -19,7 +19,7 @@ namespace Exercises_HW1
             double weight = Convert.ToDouble(Console.ReadLine());
             double index = weight / Math.Pow(height,2);
 
-            Console.WriteLine($"Ваш ИМТ = {index}");
+            Console.WriteLine($"Ваш ИМТ = {index:F2}");
             Console.ReadLine();
         }
     }
