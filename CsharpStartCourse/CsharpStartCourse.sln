@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpStartCourse", "Csharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises_HW1", "..\Exercises_HW1\Exercises_HW1.csproj", "{A07926E1-47E8-41E1-948D-CEE330E03783}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson2_30.07.21", "..\lesson2_30.07.21\lesson2_30.07.21.csproj", "{DAB6F7E9-95A9-425E-85C4-C3C0C71061A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A07926E1-47E8-41E1-948D-CEE330E03783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A07926E1-47E8-41E1-948D-CEE330E03783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A07926E1-47E8-41E1-948D-CEE330E03783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB6F7E9-95A9-425E-85C4-C3C0C71061A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB6F7E9-95A9-425E-85C4-C3C0C71061A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB6F7E9-95A9-425E-85C4-C3C0C71061A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB6F7E9-95A9-425E-85C4-C3C0C71061A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
