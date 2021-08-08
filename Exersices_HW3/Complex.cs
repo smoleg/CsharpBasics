@@ -41,6 +41,7 @@ namespace Exersices_HW3
             return new Complex(x.a * y.a - x.b * y.b, x.b * y.a + x.a * y.b);
         }
 
+        // Вопрос про деление
         public static Complex operator /(Complex x, Complex y)
         {
             return new Complex(Convert.ToInt32(Math.Round((x.a * y.a + x.b * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2)))), Convert.ToInt32(Math.Round((x.b * y.a - x.a * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2)))));
