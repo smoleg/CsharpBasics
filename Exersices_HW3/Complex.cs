@@ -8,9 +8,9 @@ namespace Exersices_HW3
 {
     class Complex
     {
-        public int a, b;
+        public double a, b;
 
-        public Complex(int re, int im)
+        public Complex(double re, double im)
         {
             a = re;
             b = im;
@@ -18,7 +18,7 @@ namespace Exersices_HW3
 
         public override string ToString()
         {
-            return b < 0 ? $"{a} - {-b}i" : $"{a} + {b}i";
+            return b < 0 ? $"{a:F2} - {-b:F2}i" : $"{a:F2} + {b:F2}i";
         }
 
         public static Complex operator +(Complex x, Complex y)
@@ -44,7 +44,7 @@ namespace Exersices_HW3
         // Вопрос про деление
         public static Complex operator /(Complex x, Complex y)
         {
-            return new Complex(Convert.ToInt32(Math.Round((x.a * y.a + x.b * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2)))), Convert.ToInt32(Math.Round((x.b * y.a - x.a * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2)))));
+            return new Complex(((x.a * y.a + x.b * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2))), ((x.b * y.a - x.a * y.b) / (Math.Pow(y.a, 2) + Math.Pow(y.b, 2))));
         }
 
         public static void Calculator(Complex x, Complex y)
@@ -53,31 +53,33 @@ namespace Exersices_HW3
             Console.WriteLine($"Вторрое число: {y}");
 
             // Вопрос про goto
-
-        S:  Console.Write($"Введите знак для вычисления: ");
-            string sign = Console.ReadLine();
-
-            switch (sign)
+            while (true)
             {
-                case "+":
-                    Console.WriteLine($"Сумма комплексных чисел: {x + y}");
-                    break;
+                Console.Write($"Введите знак для вычисления: ");
+                string sign = Console.ReadLine();
 
-                case "-":
-                    Console.WriteLine($"Разность комплексных чисел: {x - y}");
-                    break;
+                switch (sign)
+                {
+                    case "+":
+                        Console.WriteLine($"Сумма комплексных чисел: {x + y}");
+                        break;
 
-                case "*":
-                    Console.WriteLine($"Произведение комплексных чисел: {x * y}");
-                    break;
+                    case "-":
+                        Console.WriteLine($"Разность комплексных чисел: {x - y}");
+                        break;
 
-                case "/":
-                    Console.WriteLine($"Частное комплексных чисел: {x / y}");
-                    break;
+                    case "*":
+                        Console.WriteLine($"Произведение комплексных чисел: {x * y}");
+                        break;
 
-                default:
-                    Console.WriteLine("Вы ввели не знак! Повторите ввод.");
-                    goto S;
+                    case "/":
+                        Console.WriteLine($"Частное комплексных чисел: {x / y}");
+                        break;
+
+                    default:
+                        Console.WriteLine("Вы ввели не знак! Повторите ввод.");
+                        break;
+                }
             }
         }
 
