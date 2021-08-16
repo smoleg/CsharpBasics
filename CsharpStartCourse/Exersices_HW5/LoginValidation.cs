@@ -57,7 +57,7 @@ namespace Exersices_HW5
     {
         public void Check ()
         {
-            Regex regex = new ("^[a-zA-Z]+[a-zA-Z0-9]{1,9}");
+            Regex regex = new ("^[a-zA-Z]+[a-zA-Z0-9]{1,9}$");
             string login;
 
             Console.WriteLine("\nПроверка логина. Регулярные выражения.");
