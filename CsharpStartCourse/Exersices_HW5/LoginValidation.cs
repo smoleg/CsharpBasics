@@ -65,7 +65,7 @@ namespace Exersices_HW5
             {
                 Console.Write("Введите логин: ");
                 login = Console.ReadLine();
-            } while (!regex.IsMatch(login) || login.Length > 10);
+            } while (!regex.IsMatch(login));
             
             Console.WriteLine("Введен корректный логин.");
         }        
