@@ -18,15 +18,15 @@ namespace Exersices_HW6
             List<Student> studentList = new();
             studentList = students.GetList(path);
 
-            // Задание а
+            // Задание а Подсчитать количество студентов учащихся на 5 и 6 курсах;
             students.CountCourse(studentList);
             Console.WriteLine();
 
-            // Задание б
+            // Задание б Подсчитать сколько студентов в возрасте от 18 до 20 лет на каком курсе учатся
             students.CountCourseAge(studentList);
             Console.WriteLine();
 
-            // Задание в + г*
+            // Задание в + г* Отсортировать список по курсу и возрасту студента
             students.SortAge(studentList);
             students.Print(studentList);
         }
